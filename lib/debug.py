@@ -9,11 +9,13 @@ from models import Game
 
 fake = Faker()
 
-if __name__ == '__main__':
-    
-    engine = create_engine('sqlite:///seed_db.db')
+if __name__ == "__main__":
+    engine = create_engine("sqlite:///seed_db.db")
     Session = sessionmaker(bind=engine)
     session = Session()
 
+    import ipdb
 
-    import ipdb; ipdb.set_trace()
+    ipdb.set_trace()
+
+
